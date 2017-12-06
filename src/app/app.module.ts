@@ -7,7 +7,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
 
 import { CadastroPage } from '../pages/cadastro/cadastro';
+import { LoginPage } from './../pages/login/login';
 import { HomePage } from '../pages/home/home';
+import { MenuPage } from './../pages/menu/menu';
 import { MyApp } from './app.component';
 
 const firebaseAppConfig: FirebaseAppConfig = {
@@ -23,6 +25,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
   declarations: [
     CadastroPage,
     HomePage,
+    LoginPage,
+    MenuPage,
     MyApp
   ],
   imports: [
@@ -34,6 +38,8 @@ const firebaseAppConfig: FirebaseAppConfig = {
   entryComponents: [
     CadastroPage,
     HomePage,
+    LoginPage,
+    MenuPage,
     MyApp
   ],
   providers: [

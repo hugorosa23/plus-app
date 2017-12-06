@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+import { MenuPage } from '../menu/menu';
 
 
 
@@ -15,7 +17,8 @@ export class CadastroPage {
 
   constructor(public formBuilder: FormBuilder, 
               public navCtrl: NavController, 
-              public navParams: NavParams) {
+              public navParams: NavParams, 
+              public alertCtrl: AlertController) {
 
     //let emailRegex = ("/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/"); /*Expressão regular para emails*/
 
@@ -27,6 +30,18 @@ export class CadastroPage {
       confirmarSenha: ['', [Validators.required, Validators.minLength(8)]],
     });
 
+  }
+
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Sucesso!',
+      subTitle: 'Seu cadastro foi realizado! Acesse já!',
+      buttons: [{
+        text: 'Acessar',
+        handler: data => {this.navCtrl.push(MenuPage)}
+      }]
+    });
+    alert.present();
   }
 
   onSubmit():void {

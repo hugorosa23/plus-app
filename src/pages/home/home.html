@@ -1,8 +1,33 @@
+<ion-header>
+    
+    <ion-toolbar>
+        <button ion-button round float-right (click)="onLogin()" color="redplus">Fazer Login!</button>
+    </ion-toolbar>
+    
+</ion-header>
+<ion-content style="background-color: #E12020">
 
-<ion-content padding>
-
-  <button ion-button block (click)="onCadastro()" color="danger">Cadastrar!</button>
-  <br>
-  <button ion-button block (click)="onCadastro()" color="danger">Fazer Login!</button>
+  <ion-slides pager>
+      
+        <ion-slide >
+          <h1>Plus!</h1>
+          <p>Crie já sua conta no Plus</p>
+        </ion-slide>
+      
+        <ion-slide>
+          <div>
+            <h1>O Plus é</h1>
+            <p>Uma ferramenta que irá te auxiliar no dia a dia.<br> Que tal organizar seu tempo?<br> Dê um PLUS!</p>
+          </div>
+        </ion-slide>
+      
+        <ion-slide>
+          <h1>Dê um Plus!</h1>
+          <p>Cadastre-se agora e aproveite!</p>
+          <br>
+          <button ion-button round (click)="onCadastro()" color="light">Cadastrar!</button>
+        </ion-slide>
+      
+      </ion-slides>
   
 </ion-content>
