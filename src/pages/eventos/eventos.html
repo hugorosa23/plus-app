@@ -1,13 +1,90 @@
 
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Eventos</ion-title>
-  </ion-navbar>
-
+    <ion-navbar>
+      <ion-title>Eventos</ion-title> 
+    </ion-navbar>
+    
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color: #E12020">
+
+    <ion-fab right top edge>
+        <button ion-fab color="orangeplus"><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list side="left">
+          <button ion-button small round color="orangeplus"><ion-icon name="calendar">&nbsp;Calendário</ion-icon></button>            
+          <button ion-button small round color="orangeplus"><ion-icon name="bookmark">&nbsp;Novo Evento</ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>  
+
+    <ion-card margin-top>
+        
+        <ion-item>
+            <ion-avatar item-start>
+              <img src="assets/imgs/perfil.jpg">
+            </ion-avatar>
+            <h2>Apresentação</h2>
+            <p>21 de Dezembro, 2017</p>
+        </ion-item>
+
+          <img src="assets/imgs/card-map.png">
+        
+          <ion-card-content>
+              <p>Apresentação da aplicação Plus da equipe Hakon para recebimento de nota da disciplina de Tópicos Integradores.</p>
+          </ion-card-content>
+        
+          <ion-item color="greyplus">
+            <ion-icon name="school" item-left large ></ion-icon>
+            <h2>Uninassau Ponta Verde</h2>
+            <p>R. Prof. Sandoval Arroxelas, 239 - Ponta Verde, Maceió - AL</p>
+          </ion-item>
+        
+          <ion-item>
+            <span item-left>Hora: 19:00</span>
+            <span item-left>18 min</span>
+            <span item-left>(2.6 km)</span>
+            <button ion-button icon-left clear item-end>
+              <ion-icon name="navigate"></ion-icon>
+              Ir ao Evento
+            </button>
+          </ion-item>
+        
+        </ion-card>
+
+        <ion-card>
+            
+            <ion-item>
+                <ion-avatar item-start>
+                  <img src="assets/imgs/perfil-homem.jpg">
+                </ion-avatar>
+                <h2>Véspera de Natal</h2>
+                <p>Steve Jobs</p>
+                <p>24 de Dezembro, 2017</p>
+            </ion-item>
+    
+              <img src="assets/imgs/card2-map.png">
+            
+              <ion-card-content>
+                  <p>Festa de Natal com o Steve, levar o vinho e peru!</p>
+              </ion-card-content>
+            
+              <ion-item color="greyplus">
+                <ion-icon name="wine" item-left large ></ion-icon>
+                <h2>Apartamento do Steve</h2>
+                <p>Rua Jangadeiros Alagoanos, 525 - Pajuçara, Maceió - AL</p>
+              </ion-item>
+            
+              <ion-item>
+                <span item-left>Hora: 20:00</span>
+                <span item-left>20 min</span>
+                <span item-left>(3,8 km)</span>
+                <button ion-button icon-left clear item-end>
+                  <ion-icon name="navigate"></ion-icon>
+                  Ir ao Evento
+                </button>
+              </ion-item>
+            
+            </ion-card>
 
 </ion-content>
